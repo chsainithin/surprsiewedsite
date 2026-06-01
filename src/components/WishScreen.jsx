@@ -27,7 +27,7 @@ export default function WishScreen({ showLove, setShowLove, onOpenNextFolder }) 
       }, 30000); 
       return () => clearTimeout(timer);
     }
-  },[] );
+  }, );
 
   useEffect(() => {
     if (currentPhase === "loading") {
