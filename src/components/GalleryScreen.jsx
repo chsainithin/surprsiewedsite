@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 export default function LetterContentScreen({ onNextAction }) {
   // Hardcoded or dynamically swapped asset images for the Polaroids
     const photos = [
-    "top.jpeg",
+    "Top.jpeg",
     "bottom.jpeg" , // Top photo
-    "middle.jpeg" // Middle photo
+    "Middle.jpeg" // Middle photo
      // Bottom photo
   ];
 
