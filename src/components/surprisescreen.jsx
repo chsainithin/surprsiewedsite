@@ -34,18 +34,37 @@ useEffect(() => {
           className="text-6xl md:text-9xl font-black text-white tracking-tighter flex justify-center"
         >
           {title.split("").map((letter, i) => (
+            // <motion.span
+            //   key={i}
+            //   whileHover={{ 
+            //     y: -30, 
+            //     color: "#38bdf8",
+            //     scale: 1.1 
+            //   }}
+            //   transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            //   className="inline-block"
+            // >
+            //   {letter === " " ? "\u00A0" : letter}
+            // </motion.span>
             <motion.span
-              key={i}
-              whileHover={{ 
-                y: -30, 
-                color: "#38bdf8",
-                scale: 1.1 
-              }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className="inline-block"
-            >
-              {letter === " " ? "\u00A0" : letter}
-            </motion.span>
+  key={i}
+  // Change whileHover to whileTap for mobile support
+  whileTap={{ 
+    y: -30, 
+    color: "#38bdf8",
+    scale: 1.1 
+  }}
+  // Optional: keep it hoverable on desktop too
+  whileHover={{ 
+    y: -30, 
+    color: "#38bdf8",
+    scale: 1.1 
+  }}
+  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+  className="inline-block cursor-pointer"
+>
+  {letter === " " ? "\u00A0" : letter}
+</motion.span>
           ))}
         </motion.h1>
 
