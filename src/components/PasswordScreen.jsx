@@ -72,7 +72,7 @@ export default function FriendshipPasswordScreen({ onAuthenticated }) {
           {/* Image Wrapper */}
           <div className="w-full aspect-square overflow-hidden bg-black/40 rounded-lg border border-white/10 relative">
             <img
-              // src="/loginimage.png"
+              src="/loginimage.png"
               alt="Friendship Memory"
               className="w-full h-full object-cover filter grayscale contrast-[1.1] brightness-[0.85] group-hover:brightness-[1] transition-all duration-300"
             />
