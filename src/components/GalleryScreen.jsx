@@ -44,20 +44,23 @@ export default function LetterContentScreen({ onNextAction }) {
               Happiest Birthday, Akhila ! I wish you the best!
             </p>
 
-            {/* <p>
-              No matter how much time passes, my care and appreciation for you will never fade. I promise to always stand beside you, support you, and celebrate every little and big achievement of your life. Thank you for being my happiness, my safe place, and one of the best things that has ever happened to me. I hope your birthday is filled with love, laughter, surprises, and moments that make you feel as special as you truly are.
-            </p> */}
-
+             <p clasasName="text-xl md:text-base font-serif tracking-wide text-[#3a1d07]/90 italic leading-relaxed ">
+            Happy birthday to the most incredible person! I may not have been in your life for long, but every day with you has been magical. Here’s to many more birthdays by your side
+             </p>
+             
+          
             
             
-            <p className="text-xs">
-              May your day be as wonderful, beautiful, and unforgettable as you are to me. :)
-            </p>
+          
           </div>
         </div>
 
         {/* Letter Signature Footer Component */}
         <div className="w-full text-center mt-6 flex flex-col items-center">
+
+            <p className="text-xs">
+              May your day be as wonderful, beautiful, and unforgettable as you are to me. :)
+            </p>
           <span className="font-serif italic text-lg text-[#3a1d07] font-medium tracking-widest">
           Wishing you a lifetime of love, joy, and beautiful moments 🎂💙
           </span>
