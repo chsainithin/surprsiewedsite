@@ -115,7 +115,7 @@ export default function FriendshipPasswordScreen({ onAuthenticated }) {
   onClick={() => setShowHint(!showHint)}
   className="mt-4 text-[10px] uppercase tracking-widest text-neutral-500 hover:text-sky-400 transition-colors"
 >
-  {showHint ? "THE DATE WE MET." : "NEED A CLUE? 🔍"}
+  {showHint ? "The day we first started our conversation on LinkedIn" : "NEED A CLUE? 🔍"}
 </button>
 
           
