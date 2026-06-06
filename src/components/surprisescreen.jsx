@@ -24,7 +24,7 @@ export default function BirthdaySurpriseScreen({ onBackAction }) {
       "You're the best! ✨",
       "Have a legendary day! 🎸",
       "Keep shining bright! 🌸",
-      "Nothing  is better than  the time i get spentwith yoyu! 🥰",
+      "Nothing is better than the time i get spend with you! 🥰",
     ],
     []
   );
