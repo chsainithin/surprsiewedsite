@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 export default function FriendshipPasswordScreen({ onAuthenticated }) {
   const [password, setPassword] = useState("");
   const [isError, setIsError] = useState(false);
+  const [showHint, setShowHint] = useState(false);
   const codeLength = 6; 
 
   // Handler for pinpad button clicks
@@ -14,7 +15,7 @@ export default function FriendshipPasswordScreen({ onAuthenticated }) {
 
       // Automatically validate if the friend finishes entering 6 digits
       if (newPassword.length === codeLength) {
-        if (newPassword === "070601") {
+        if (newPassword === "110326") {
           onAuthenticated();
         } else {
           // Trigger shake animation and reset
@@ -95,6 +96,12 @@ export default function FriendshipPasswordScreen({ onAuthenticated }) {
       {/* 2. MIDDLE COLUMN: MINIMALIST INTERACTION NODE (TRANSPARENT SPACER) */}
       <div className="hidden lg:flex flex-col items-center justify-center text-center space-y-4 px-4 border-x border-white/10 py-6 h-64">
         <span className="text-2xl text-sky-400/30 animate-pulse">✦</span>
+        <button 
+  onClick={() => setShowHint(!showHint)}
+  className="mt-4 text-[10px] uppercase tracking-widest text-neutral-500 hover:text-sky-400 transition-colors"
+>
+  {showHint ? "THE DATE WE MET." : "NEED A CLUE? 🔍"}
+</button>
       </div>
 
       {/* 3. RIGHT COLUMN: STARRY SKY COMPATIBLE PINPAD */}
@@ -109,6 +116,8 @@ export default function FriendshipPasswordScreen({ onAuthenticated }) {
           }`}>
             {isError ? "ACCESS_DENIED. RETRY // ❌" : "ENTER ACCESS CODE 🖤"}
           </h2>
+
+          
         </div>
 
         {/* Cyber Neon Indicator Dots */}
